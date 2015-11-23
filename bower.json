@@ -1,0 +1,17 @@
+{
+  "name": "SkitterLayout",
+  "version": "0.0.1",
+  "main": "bower.json",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/Resources/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4",
+    "semantic": "master"
+  }
+}
