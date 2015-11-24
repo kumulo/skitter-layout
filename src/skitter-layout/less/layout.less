@@ -34,4 +34,202 @@ body {
         -webkit-appearance: none;
         border-radius: 0;
     }
+    .ui {
+        &.popup {
+            max-width: 700px;
+            font-size: 100%;
+            > .header {
+                border-bottom: 2px solid @mid-grey;
+                font-size: 240%;
+                font-weight: 700;
+                font-family: Dosis;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            ul.stats {
+                white-space: nowrap;
+                font-family: Lato, sans-serif;
+                font-weight: 300;
+                > li {
+                    display: inline-block;
+                    margin-left: 20px;
+                    font-size: 150%;
+                    line-height: 1.5em;
+                    .title {
+
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 60px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 360%;
+        line-height: 60px;
+        padding: 0 20px;
+        font-weight: 700;
+        font-family: Dosis, sans-serif;
+        text-transform: uppercase;
+        border-bottom: 2px solid @mid-grey;
+        background: @white;
+        z-index: 99;
+    }
+    #content {
+        margin-top: 60px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-right: 320px;
+        .teams {
+            border: 2px solid @mid-grey;
+            > .team {
+                padding: 20px 120px 20px 40px;
+                position: relative;
+                &.odd {
+                    background: @mid-green;
+                    color: @white;
+                }
+                &.even {
+                    background: @light-green;
+                    color: @black;
+                }
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3) {
+                    .team-header {
+                        font-size: 360%;
+                        .team-name {
+                            margin-bottom: 20px;
+                            font-weight: 700;
+                            font-family: Dosis, sans-serif;
+                        }
+                    }
+                }
+                &:nth-child(2),
+                &:nth-child(3) {
+                    .team-footer {
+                        .score {
+                            margin-top: 65px;
+                        }
+                    }
+                }
+                .team-header {
+                    font-size: 240%;
+                    text-transform: uppercase;
+                    position: relative;
+                    .team-name {
+                        font-weight: 300;
+                        font-family: Lato, sans-serif;
+                    }
+                    .position {
+                        float: left;
+                        position: relative;
+                        width: 50px;
+                        font-weight: 700;
+                        font-family: Dosis, sans-serif;
+                    }
+                }
+                .team-footer {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    width: 100px;
+                    text-align: center;
+                    .title {
+                        font-size: 360%;
+                        font-weight: 700;
+                        font-family: Dosis, sans-serif;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
+                    .score {
+                        font-size: 240%;
+                        font-weight: 300;
+                        font-family: Lato, sans-serif;
+                    }
+                }
+                .team-content {
+                    margin-left: 50px;
+                    .player {
+                        margin-left: 40px;
+                        float: left;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        .coach {
+                            font-size: 240%;
+                            font-weight: 300;
+                            font-family: Lato, sans-serif;
+                        }
+                        .team {
+                            font-size: 140%;
+                            font-weight: 300;
+                            font-family: Lato, sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #side {
+        position: absolute;
+        width: 340px;
+        top: 60px;
+        margin: 0;
+        height: 100%;
+        z-index: 3;
+        left: auto;
+        right: 0;
+        font-size: 100%;
+        padding: 0;
+        .teams {
+            box-sizing: border-box;
+            font-size: 100%;
+            padding: 20px;
+            .team {
+                margin-top: 20px;
+                padding: 20px;
+                border: 2px solid @mid-grey;
+                color: @white;
+                &:first-child {
+                    margin-top: 0;
+                }
+                &.bashlord {
+                    background-color: @bashlord-color;
+                }
+                &.attaque {
+                    background-color: @attaque-color;
+                }
+                &.defense {
+                    background-color: @defense-color;
+                }
+                &.paillasson {
+                    background-color: @paillasson-color;
+                }
+                &.cuillere {
+                    background-color: @cuillere-color;
+                }
+                &.passoire {
+                    background-color: @passoire-color;
+                }
+                .name {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-family: Dosis, sans-serif;
+                    font-size: 300%;
+                }
+                .team-name {
+                    font-size: 220%;
+                    font-family: Lato, sans-serif;
+                }
+            }
+        }
+    }
 }

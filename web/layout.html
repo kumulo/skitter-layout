@@ -8,65 +8,1231 @@
         <meta name="mobile-web-app-capable" content="no">
         <meta name="apple-mobile-web-app-capable" content="no">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <link rel="stylesheet" type="text/css" href="built/libs.min.css" />
-        <link rel="stylesheet" type="text/css" href="built/app.min.css" />
-        <link rel="stylesheet" type="text/css" href="built/print.min.css" />
+        <link rel="stylesheet" type="text/css" href="../dist/libs.min.css" />
+        <link rel="stylesheet" type="text/css" href="../dist/app.min.css" />
     </head>
     <body>
         <header id="header" class="clearfix">
             Dragon Bowl VIII
         </header>
-        <section id="teams" class="clearfix">
-            <article class="team clearfix">
-                <header class="team-header">
-                    <div class="position">1</div>
-                    <h2 class="team-name">Mass</h2>
-                </header>
-                <footer class="team-footer">
-                    <div class="title">V/D/N</div>
-                    <div class="score">15/6/3</div>
-                </footer>
-                <ul class="team-content players clearfix">
-                    <li class="player">
-                        <h3 class="coach">Bourpif</h3>
-                        <p class="team">Nains du Chaos</p>
-                    </li>
-                    <li class="player">
-                        <h3 class="coach">Olivierdulac</h3>
-                        <p class="team">Hommes-Lézards</p>
-                    </li>
-                    <li class="player">
-                        <h3 class="coach">Samdulac</h3>
-                        <p class="team">Orques</p>
-                    </li>
-                </ul>
-            </article>
-            <article class="team clearfix">
-                <header class="team-header">
-                    <div class="position">2</div>
-                    <h2 class="team-name">Mass</h2>
-                </header>
-                <footer class="team-footer">
-                    <div class="title">V/D/N</div>
-                    <div class="score">15/6/3</div>
-                </footer>
-                <ul class="team-content players clearfix">
-                    <li class="player">
-                        <h3 class="coach">Bourpif</h3>
-                        <p class="team">Nains du Chaos</p>
-                    </li>
-                    <li class="player">
-                        <h3 class="coach">Olivierdulac</h3>
-                        <p class="team">Hommes-Lézards</p>
-                    </li>
-                    <li class="player">
-                        <h3 class="coach">Samdulac</h3>
-                        <p class="team">Orques</p>
-                    </li>
-                </ul>
-            </article>
+        <section id="content" class="clearfix">
+            <div class="teams clearfix">
+                <article class="team odd clearfix">
+                    <header class="team-header">
+                        <div class="position">1</div>
+                        <h2 class="team-name">Massacreurs Turons</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="title">V/D/N</div>
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <ul class="team-content players clearfix">
+                        <li class="player">
+                            <h3 class="coach">Bourpif</h3>
+                            <p class="team">Nains du Chaos</p>
+                        </li>
+                        <li class="player">
+                            <h3 class="coach">Olivierdulac</h3>
+                            <p class="team">Hommes-Lézards</p>
+                        </li>
+                        <li class="player">
+                            <h3 class="coach">Samdulac</h3>
+                            <p class="team">Orques</p>
+                        </li>
+                    </ul>
+                    <div class="ui popup hidden">
+                        <div class='header'>Massacreurs Turons</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team even clearfix">
+                    <header class="team-header">
+                        <div class="position">2</div>
+                        <h2 class="team-name">Les Sboons</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <ul class="team-content players clearfix">
+                        <li class="player">
+                            <h3 class="coach">Lizardcore</h3>
+                        </li>
+                        <li class="player">
+                            <h3 class="coach">Sladmortis</h3>
+                        </li>
+                        <li class="player">
+                            <h3 class="coach">Oon</h3>
+                        </li>
+                    </ul>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>Les Sboons</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Lizardcore :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Sladmortis :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Oon :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team odd clearfix">
+                    <header class="team-header">
+                        <div class="position">3</div>
+                        <h2 class="team-name">Turone, milf & Cognac</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <ul class="team-content players clearfix">
+                        <li class="player">
+                            <h3 class="coach">Kindé</h3>
+                        </li>
+                        <li class="player">
+                            <h3 class="coach">SimonMLF</h3>
+                        </li>
+                        <li class="player">
+                            <h3 class="coach">Oninokolas</h3>
+                        </li>
+                    </ul>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>Turone, milf & Cognac</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Kindé :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">SimonMLF :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Oninokolas :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team even clearfix">
+                    <header class="team-header">
+                        <div class="position">4</div>
+                        <h2 class="team-name">The A-Team</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>The A-Team</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team odd clearfix">
+                    <header class="team-header">
+                        <div class="position">5</div>
+                        <h2 class="team-name">Les Sales P’tins d’Branques</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>Les Sales P’tins d’Branques</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team even clearfix">
+                    <header class="team-header">
+                        <div class="position">6</div>
+                        <h2 class="team-name">BAF en String</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>BAF en String</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team odd clearfix">
+                    <header class="team-header">
+                        <div class="position">7</div>
+                        <h2 class="team-name">BN Legends</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>BN Legends</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team even clearfix">
+                    <header class="team-header">
+                        <div class="position">8</div>
+                        <h2 class="team-name">More than BAF</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>More than BAF</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team odd clearfix">
+                    <header class="team-header">
+                        <div class="position">9</div>
+                        <h2 class="team-name">Mor(dor)bihannaise 1</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>Mor(dor)bihannaise 1</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team even clearfix">
+                    <header class="team-header">
+                        <div class="position">10</div>
+                        <h2 class="team-name">More than BAF</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>More than BAF</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team odd clearfix">
+                    <header class="team-header">
+                        <div class="position">11</div>
+                        <h2 class="team-name">BN Legends</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>BN Legends</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team even clearfix">
+                    <header class="team-header">
+                        <div class="position">12</div>
+                        <h2 class="team-name">More than BAF</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>More than BAF</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team odd clearfix">
+                    <header class="team-header">
+                        <div class="position">13</div>
+                        <h2 class="team-name">BN Legends</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>BN Legends</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="team even clearfix">
+                    <header class="team-header">
+                        <div class="position">14</div>
+                        <h2 class="team-name">More than BAF</h2>
+                    </header>
+                    <footer class="team-footer">
+                        <div class="score">15 / 6 / 3</div>
+                    </footer>
+                    <div class="ui popup bottom left transition hidden">
+                        <div class='header'>More than BAF</div>
+                        <ul class='content stats'>
+                            <li>
+                                <h3 class="title">Totaux :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">15</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">6</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">3</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Bourpif :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Olivierdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="title">Samdulac :</h3>
+                                <ul class="clearfix">
+                                    <li class="clearfix">
+                                        <span class="what">Victoires :</span>
+                                        <span class="value">5</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Nuls : </span>
+                                        <span class="value">2</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="what">Défaites :</span>
+                                        <span class="value">1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </section>
-        <script type="text/javascript" src="built/libs.min.js"></script>
-        <script async type="text/javascript" src="built/app.min.js"></script>
+        <aside id="side" class="clearfix right ui rail">
+            <ul class="teams clearfix ui sticky">
+                <li class="team clearfix bashlord">
+                    <h2 class="name">Bashlord</h2>
+                    <p class="team-name">Les SNOOBS</p>
+                </li>
+                <li class="team clearfix attaque">
+                    <h2 class="name">Attaque</h2>
+                    <p class="team-name">Massacreurs Turons</p>
+                </li>
+                <li class="team clearfix defense">
+                    <h2 class="name">Défense</h2>
+                    <p class="team-name">Turone, MILF & Cognac</p>
+                </li>
+                <li class="team clearfix paillasson">
+                    <h2 class="name">Paillasson</h2>
+                    <p class="team-name">Assez d’Décès</p>
+                </li>
+                <li class="team clearfix cuillere">
+                    <h2 class="name">Cuillère de bois</h2>
+                    <p class="team-name">Bretagne Sud</p>
+                </li>
+                <li class="team clearfix passoire">
+                    <h2 class="name">Passoire</h2>
+                    <p class="team-name">KBL Breizh Punishers</p>
+                </li>
+            </ul>
+        </aside>
+        <script type="text/javascript" src="../dist/libs.min.js"></script>
+        <script async type="text/javascript" src="../dist/app.min.js"></script>
     </body>
 </html>

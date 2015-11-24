@@ -11,16 +11,16 @@ module.exports = function(grunt) {
       },
       libs: {
         files: {
-          'web/built/libs.min.js': [
+          'dist/libs.min.js': [
             'bower_components/jquery/dist/jquery.js',
             'bower_components/semantic/dist/semantic.js'
           ]
         },
-        sourceMapName: 'web/built/libs.map'
+        sourceMapName: 'dist/libs.map'
       },
       dist: {
         files: {
-          'web/built/app.min.js': [
+          'dist/app.min.js': [
              "src/skitter-layout/js/front.js"
           ]
         },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
           keepSpecialComments: 0
         },
         files: {
-          'web/built/libs.min.css': [
+          'dist/libs.min.css': [
             '.tmp/libs/1.fonts.css',
             '.tmp/libs/semantic.css',
             '.tmp/libs/reset5.css'
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
           keepSpecialComments: 0
         },
         files: {
-          'web/built/app.min.css': [
+          'dist/app.min.css': [
             '.tmp/css/app.css'
           ]
         }
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
             dest: '.tmp/libs/',
             options: {
                 process: function (content, srcpath) {
-                    return content.replace(/web\//g, "/");
+                    return content.replace(/dist\//g, "../dist/");
                 },
             },
             flatten: true,
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
             expand: true,
             filter: 'isFile',
             src: 'bower_components/semantic/dist/themes/default/assets/fonts/*',
-            dest: 'web/built/fonts/',
+            dest: 'dist/fonts/',
             flatten: true,
         },
         cssLibs: {
@@ -108,7 +108,7 @@ module.exports = function(grunt) {
             flatten: true,
             options: {
                 process: function (content, srcpath) {
-                    return content.replace(/themes\/default\/assets\//g, "/built/");
+                    return content.replace(/themes\/default\/assets\//g, "../dist/");
                 },
             }
         },
@@ -123,7 +123,7 @@ module.exports = function(grunt) {
                     woff2: true,
                     svg: true
                 },
-                fontPath: 'web/built/fonts/',
+                fontPath: 'dist/fonts/',
                 cssFile: '.tmp/libs/1.fonts.css',
                 fonts: [
                     {
